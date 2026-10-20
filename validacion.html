@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Muro de Ladrillo</title>
+    <meta name="description" content="calculadora obra de construccion">
+    <meta name="keywords" content="calculadora de materiales de obra de construccion">
+    <meta name="author" content="Jose Alexander Casallas y Juan Esteban Suarez">
+    <link rel="stylesheet" href="css/validacion.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo-wrapper">
+            <div class="logo-container">
+                <img class="logoobra" src="icono_obra.png" alt="logo_obra">
+            </div>
+            <div class="header-text">
+                <span class="tituloheader">CalculadoraObra</span>
+                <span class="subtituloheader">MATERIALES PRO</span>
+            </div>
+        </div>
+
+        <div class="user-wrapper">
+            <div class="avatar">J</div>
+            <div class="user-text">
+                <span class="saludo">Hola, Juan</span>
+                <span class="rol">Constructor</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="alerta-error">
+        ⚠ Por favor, complete todos los campos correctamente antes de continuar.
+    </div>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="menu.html">Menú Principal</a>
+            <span>&gt;</span>
+            <span>Cálculo de Muro de Ladrillo</span>
+        </div>
+
+        <div class="calculo-grid">
+            <section class="panel-parametros">
+                <h3>Parámetros del Muro</h3>
+
+                <label for="espesor">Espesor del muro</label>
+                <select class="inputs" id="espesor">
+                    <option value="" selected disabled>Selecciona espesor</option>
+                    <option>30 cm</option>
+                    <option>20 cm</option>
+                    <option>15 cm</option>
+                </select>
+
+                <label for="largo">Largo (m)</label>
+                <div class="input-unidad">
+                    <input class="inputs input-error" type="number" id="largo" value="-5.00" step="0.01">
+                    <span class="unidad">m</span>
+                </div>
+                <span class="mensaje-error">Ingrese un valor válido</span>
+
+                <label for="alto">Alto (m)</label>
+                <div class="input-unidad">
+                    <input class="inputs input-error" type="number" id="alto" placeholder="">
+                    <span class="unidad">m</span>
+                </div>
+                <span class="mensaje-error">Este campo es obligatorio</span>
+
+                <button class="btn">🧮 Calcular</button>
+            </section>
+
+            <section class="panel-resultado panel-vacio">
+                <div class="icono-vacio">📋</div>
+                <h3>Esperando Parámetros Válidos</h3>
+                <p>Introduce el espesor, largo y alto correctos para visualizar el volumen de materiales a ordenar.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <small>© 2026 Calculadora de Materiales de Construcción. Todos los derechos reservados.</small>
+        <div class="footer-links">
+            <a href="#">Términos de Servicio</a>
+            <a href="#">Política de Privacidad</a>
+        </div>
+    </footer>
+
+</body>
+</html>

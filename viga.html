@@ -1,0 +1,119 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Viga de Hormigón</title>
+    <meta name="description" content="calculadora obra de construccion">
+    <meta name="keywords" content="calculadora de materiales de obra de construccion">
+    <meta name="author" content="Jose Alexander Casallas y Juan Esteban Suarez">
+    <link rel="stylesheet" href="css/viga.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+    <header>
+        <div class="logo-wrapper">
+            <div class="logo-container">
+                <img class="logoobra" src="icono_obra.png" alt="logo_obra">
+            </div>
+            <div class="header-text">
+                <span class="tituloheader">CalculadoraObra</span>
+                <span class="subtituloheader">MATERIALES PRO</span>
+            </div>
+        </div>
+ 
+        <div class="user-wrapper">
+            <div class="avatar">J</div>
+            <div class="user-text">
+                <span class="saludo">Hola, Juan</span>
+                <span class="rol">Constructor</span>
+            </div>
+        </div>
+    </header>
+ 
+    <main>
+        <div class="breadcrumb">
+            <a href="menu.html">Menú Principal</a>
+            <span>&gt;</span>
+            <span>Cálculo de Viga de Hormigón</span>
+        </div>
+ 
+        <div class="calculo-grid">
+            <section class="panel-parametros">
+                <h3>Parámetros de la Viga</h3>
+ 
+                <label for="largo">Largo (m)</label>
+                <div class="input-unidad">
+                    <input class="inputs" type="number" id="largo" value="6.00" step="0.01">
+                    <span class="unidad">m</span>
+                </div>
+ 
+                <button class="btn">🧮 Calcular</button>
+            </section>
+ 
+            <section class="panel-resultado">
+                <div class="resultado-superficie">
+                    <div>
+                        <span class="etiqueta-resultado">CÁLCULO REALIZADO</span>
+                        <h3>Volumen Total de Hormigón</h3>
+                    </div>
+                    <span class="valor-resultado">0.36 m³</span>
+                </div>
+ 
+                <div class="materiales">
+                    <h3>Materiales Requeridos para Viga</h3>
+ 
+                    <div class="tabla-materiales">
+                        <div class="fila-header">
+                            <span>MATERIAL</span>
+                            <span>CANTIDAD</span>
+                            <span>UNIDAD</span>
+                        </div>
+                        <div class="fila">
+                            <span class="material">Cemento Portland</span>
+                            <span class="cantidad">3.20</span>
+                            <span class="unidad-material">bolsas (50kg)</span>
+                        </div>
+                        <div class="fila">
+                            <span class="material">Arena Fina</span>
+                            <span class="cantidad">0.18</span>
+                            <span class="unidad-material">m³</span>
+                        </div>
+                        <div class="fila">
+                            <span class="material">Piedra Partida</span>
+                            <span class="cantidad">0.28</span>
+                            <span class="unidad-material">m³</span>
+                        </div>
+                        <div class="fila">
+                            <span class="material">Hierro Ø 8 mm (Estructural)</span>
+                            <span class="cantidad">4.00</span>
+                            <span class="unidad-material">barras (12m)</span>
+                        </div>
+                        <div class="fila">
+                            <span class="material">Hierro Ø 4.2 mm (Estribos)</span>
+                            <span class="cantidad">6.00</span>
+                            <span class="unidad-material">barras (12m)</span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="botones-resultado">
+                    <button class="btn-secundario">Volver al menú</button>
+                    <button class="btn-oscuro">↻ Nuevo cálculo</button>
+                </div>
+            </section>
+        </div>
+    </main>
+ 
+    <footer>
+        <small>©️ 2026 Calculadora de Materiales de Construcción. Todos los derechos reservados.</small>
+        <div class="footer-links">
+            <a href="#">Términos de Servicio</a>
+            <a href="#">Política de Privacidad</a>
+        </div>
+    </footer>
+ 
+</body>
+</html>
