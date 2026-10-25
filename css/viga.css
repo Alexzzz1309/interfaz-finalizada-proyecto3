@@ -264,3 +264,7 @@ footer {
     text-decoration: none;
     margin-left: 1vw;
 }
+
+@view-transition {
+    navigation: auto;
+}

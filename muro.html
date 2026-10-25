@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cálculo de Pintura</title>
+    <title>Cálculo de Muro de Ladrillo</title>
     <meta name="description" content="calculadora obra de construccion">
     <meta name="keywords" content="calculadora de materiales de obra de construccion">
     <meta name="author" content="Jose Alexander Casallas y Juan Esteban Suarez">
     <link rel="stylesheet" href="css/muro.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
- 
+
     <header>
         <div class="logo-wrapper">
             <div class="logo-container">
-                <img class="logoobra" src="icono_obra.png" alt="logo_obra">
+                <img class="logoobra" src="img/icono_obra.png" alt="logo_obra">
             </div>
             <div class="header-text">
                 <span class="tituloheader">CalculadoraObra</span>
                 <span class="subtituloheader">MATERIALES PRO</span>
             </div>
         </div>
- 
+
         <div class="user-wrapper">
             <div class="avatar">J</div>
             <div class="user-text">
@@ -33,83 +32,97 @@
             </div>
         </div>
     </header>
- 
+
     <main>
         <div class="breadcrumb">
             <a href="menu.html">Menú Principal</a>
             <span>&gt;</span>
-            <span>Cálculo de Pintura</span>
+            <span>Cálculo de Muro de Ladrillo</span>
         </div>
- 
+
         <div class="calculo-grid">
             <section class="panel-parametros">
                 <h3>Parámetros del Muro</h3>
- 
-                <label for="superficie">Superficie del muro (m²)</label>
+
+                <label for="espesor">Espesor del muro</label>
+                <select class="inputs" id="espesor">
+                    <option>30 cm</option>
+                    <option>20 cm</option>
+                    <option>15 cm</option>
+                </select>
+
+                <label for="largo">Largo (m)</label>
                 <div class="input-unidad">
-                    <input class="inputs" type="number " id="superficie" value="60 cm" step="0.01">
-                    <span class="unidad">m²</span>
+                    <input class="inputs" type="number" id="largo" value="5.00" step="0.01">
+                    <span class="unidad">m</span>
                 </div>
- 
+
+                <label for="alto">Alto (m)</label>
+                <div class="input-unidad">
+                    <input class="inputs" type="number" id="alto" value="3.00" step="0.01">
+                    <span class="unidad">m</span>
+                </div>
+
                 <button class="btn">🧮 Calcular</button>
             </section>
- 
+
             <section class="panel-resultado">
                 <div class="resultado-superficie">
-                    <div>
-                        <span class="etiqueta-resultado">CÁLCULO REALIZADO</span>
-                        <h3>Área Total de Paredes</h3>
+                    <span class="etiqueta-resultado">CÁLCULO REALIZADO</span>
+                    <div class="resultado-top">
+                        <h3>Superficie Total del Muro</h3>
+                        <span class="valor-resultado">15.00 m²</span>
                     </div>
-                    <span class="valor-resultado">60.00 m²</span>
                 </div>
- 
+
                 <div class="materiales">
-                    <h3>Pintura e Insumos Requeridos (Considerando 2 Manos)</h3>
- 
+                    <h3>Materiales Requeridos Estimados</h3>
+
                     <div class="tabla-materiales">
                         <div class="fila-header">
                             <span>MATERIAL</span>
                             <span>CANTIDAD</span>
                             <span>UNIDAD</span>
                         </div>
+
                         <div class="fila">
-                            <span class="material">Superficie de Pared / Muro</span>
-                            <span class="cantidad">60.00</span>
-                            <span class="unidad-material">m²</span>
+                            <span>Ladrillos Comunes (24x11.5x5.3)</span>
+                            <span class="cantidad">750</span>
+                            <span class="unidad-material">unidades</span>
                         </div>
                         <div class="fila">
-                            <span class="material">Pintura Látex (Rinde 6m² por Litro)</span>
-                            <span class="cantidad">10.00</span>
-                            <span class="unidad-material">Litros</span>
-                        </div>
-                        <div class="fila">
-                            <span class="material">Baldes de Pintura Recomendados</span>
+                            <span>Cemento Portland</span>
                             <span class="cantidad">3.00</span>
-                            <span class="unidad-material">baldes (de 4 Litros)</span>
+                            <span class="unidad-material">bolsas (50kg)</span>
                         </div>
                         <div class="fila">
-                            <span class="material">Fijador / Sellador Concentrado</span>
-                            <span class="cantidad">1.00</span>
-                            <span class="unidad-material">litro</span>
+                            <span>Arena Fina</span>
+                            <span class="cantidad">0.45</span>
+                            <span class="unidad-material">m³</span>
+                        </div>
+                        <div class="fila">
+                            <span>Cal Hidratada</span>
+                            <span class="cantidad">1.50</span>
+                            <span class="unidad-material">bolsas (25kg)</span>
                         </div>
                     </div>
-                </div>
- 
-                <div class="botones-resultado">
-                    <button class="btn-secundario">Volver al menú</button>
-                    <button class="btn-oscuro">↻ Nuevo cálculo</button>
+
+                    <div class="botones-resultado">
+                        <button id="btn-menu" class="btn-secundario">Volver al menú</button>
+                        <button class="btn-oscuro">↻ Nuevo cálculo</button>
+                    </div>
                 </div>
             </section>
         </div>
     </main>
- 
+
     <footer>
-        <small>©️ 2026 Calculadora de Materiales de Construcción. Todos los derechos reservados.</small>
+        <small>© 2026 Calculadora de Materiales de Construcción. Todos los derechos reservados.</small>
         <div class="footer-links">
             <a href="#">Términos de Servicio</a>
             <a href="#">Política de Privacidad</a>
         </div>
     </footer>
- 
+    <script src="muro.js"></script>
 </body>
 </html>
