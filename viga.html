@@ -1,4 +1,5 @@
-<html lang="es">
+<!DOCTYPE html>
+<lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,16 +51,16 @@
                     <span class="unidad">m</span>
                 </div>
  
-                <button class="btn">🧮 Calcular</button>
+                <button id="calcular" class="btn">🧮 Calcular</button>
             </section>
  
             <section class="panel-resultado">
                 <div class="resultado-superficie">
                     <div>
                         <span class="etiqueta-resultado">CÁLCULO REALIZADO</span>
-                        <h3>Volumen Total de Hormigón</h3>
+                        <h3>Longitud Total de Viga</h3>
                     </div>
-                    <span class="valor-resultado">0.36 m³</span>
+                    <span id="calculo" class="valor-resultado">0.00 m</span>
                 </div>
  
                 <div class="materiales">
@@ -73,28 +74,28 @@
                         </div>
                         <div class="fila">
                             <span class="material">Cemento Portland</span>
-                            <span class="cantidad">3.20</span>
-                            <span class="unidad-material">bolsas (50kg)</span>
+                            <span id="cemento" class="cantidad">0.00</span>
+                            <span class="unidad-material">kg</span>
                         </div>
                         <div class="fila">
                             <span class="material">Arena Fina</span>
-                            <span class="cantidad">0.18</span>
+                            <span id="arena" class="cantidad">0.00</span>
                             <span class="unidad-material">m³</span>
                         </div>
                         <div class="fila">
                             <span class="material">Piedra Partida</span>
-                            <span class="cantidad">0.28</span>
+                            <span id="piedra" class="cantidad">0.00</span>
                             <span class="unidad-material">m³</span>
                         </div>
                         <div class="fila">
                             <span class="material">Hierro Ø 8 mm (Estructural)</span>
-                            <span class="cantidad">4.00</span>
-                            <span class="unidad-material">barras (12m)</span>
+                            <span id="hierro8" class="cantidad">0.00</span>
+                            <span class="unidad-material">m</span>
                         </div>
                         <div class="fila">
                             <span class="material">Hierro Ø 4.2 mm (Estribos)</span>
-                            <span class="cantidad">6.00</span>
-                            <span class="unidad-material">barras (12m)</span>
+                            <span id="hierro4" class="cantidad">0.00</span>
+                            <span class="unidad-material">m</span>
                         </div>
                     </div>
                 </div>
@@ -114,6 +115,6 @@
             <a href="#">Política de Privacidad</a>
         </div>
     </footer>
-    <script src="viga.js"></script>
+    <script src="js/viga.js"></script>
 </body>
 </html>

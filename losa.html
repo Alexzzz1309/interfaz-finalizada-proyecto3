@@ -63,7 +63,7 @@
                     <span class="unidad">m</span>
                 </div>
  
-                <button class="btn">🧮 Calcular</button>
+                <button id="calcular" class="btn">🧮 Calcular</button>
             </section>
  
             <section class="panel-resultado">
@@ -72,7 +72,7 @@
                         <span class="etiqueta-resultado">CÁLCULO REALIZADO</span>
                         <h3>Superficie Cubierta de Techo</h3>
                     </div>
-                    <span class="valor-resultado">48.00 m²</span>
+                    <span id="calculo" class="valor-resultado">0.00 m²</span>
                 </div>
  
                 <div class="materiales">
@@ -86,30 +86,34 @@
                         </div>
                         <div class="fila">
                             <span class="material">Cemento Portland</span>
-                            <span class="cantidad">42.00</span>
-                            <span class="unidad-material">bolsas (50kg)</span>
+                            <span id="cemento" class="cantidad">0.00</span>
+                            <span class="unidad-material">kg</span>
                         </div>
                         <div class="fila">
                             <span class="material">Arena Fina</span>
-                            <span class="cantidad">2.10</span>
+                            <span id="arena" class="cantidad">0.00</span>
                             <span class="unidad-material">m³</span>
                         </div>
                         <div class="fila">
                             <span class="material">Piedra Partida</span>
-                            <span class="cantidad">3.20</span>
+                            <span id="piedra" class="cantidad">0.00</span>
                             <span class="unidad-material">m³</span>
                         </div>
                         <div class="fila">
                             <span class="material">Hierro Estructural Ø 8 mm</span>
-                            <span class="cantidad">24.00</span>
-                            <span class="unidad-material">barras (12m)</span>
+                            <span id="hierro8" class="cantidad">0.00</span>
+                            <span class="unidad-material">m</span>
+                        </div>
+                        <div class="fila">
+                            <span class="material">Hierro Estructural Ø 6 mm</span>
+                            <span id="hierro6" class="cantidad">0.00</span>
+                            <span class="unidad-material">m</span>
                         </div>
                     </div>
                 </div>
  
                 <div class="botones-resultado">
                     <button id="btn-regreso" class="btn-secundario">Volver al menú</button>
-                    <button class="btn-oscuro">↻ Nuevo cálculo</button>
                 </div>
             </section>
         </div>
@@ -122,6 +126,6 @@
             <a href="#">Política de Privacidad</a>
         </div>
     </footer>
-    <script src="losa.js"></script>
+    <script src="js/losa.js"></script>
 </body>
 </html>

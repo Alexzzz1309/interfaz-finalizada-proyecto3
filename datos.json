@@ -1,0 +1,51 @@
+{
+    "calculos": "calculos hechos por el profesor",
+"muro":{
+    "espesor30cm":{
+        "cementoPorM2kg": 15.2,
+        "arenaPorM2": 0.115,
+        "ladrillosPorM2": 120
+    },
+    "espesor20cm":{
+        "cementoPorM2kg": 10.9,
+        "arenaPorM2": 0.09,
+        "ladrillosPorM2": 90
+    }
+},
+"viga":{
+    "cementoPorMetroLineal": 9,
+    "arenaPorMetroLinealM3": 0.02,
+    "piedraPorMetroLinealM3": 0.02,
+    "hierro8PorMetroLineal": 4,
+    "hierro4PorMetroLineal": 3
+},
+"columna":{
+    "cementoPorMetroLineal": 7.5,
+    "arenaPorMetroLinealM3": 0.016,
+    "piedraPorMetroLinealM3": 0.016,
+    "hierro10PorMetroLineal": 6,
+    "hierro4PorMetroLineal": 3
+},
+"contrapiso":{
+    "cementoPorM3kg": 105,
+    "arenaPorM3": 0.45,
+    "piedraPorM3": 0.9,
+    "unidadEspesor": "cm",
+    "unidad": "el espesor se pasa de cm a metro"
+},
+"losa": {
+    "cementoPorM2kg": 33,
+    "arenaPorM2": 0.072,
+    "piedraPorM2": 0.072,
+    "hierro8PorM2": 7,
+    "hierro6PorM2": 4,
+    "unidadEspesor": "cm",
+    "unidad": "el espesor se sigue pasando a metros"
+},
+"piso":{
+    "porcentajeExtra": 10
+},
+"pintura": {
+    "rindePorM2LitroPintura": 6
+}
+}

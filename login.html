@@ -38,18 +38,18 @@
  
             <form class="form-registro">
                 <label for="usuario">Usuario</label>
-                <input class="inputs" type="text" id="usuario" placeholder="juan_constructor">
+                <input class="inputs" type="text" id="username" placeholder="juan_constructor" required>
  
                 <div class="fila-label">
                     <label for="password">Contraseña</label>
                     <a href="#" class="link-login link-olvido">¿Olvidaste tu contraseña?</a>
                 </div>
                 <div class="input-unidad">
-                    <input class="inputs" type="password" id="password" placeholder="••••••••••••">
-                    <span class="unidad">👁</span>
+                    <input class="inputs" type="password" id="password" placeholder="••••••••••••" required>
+                    <span id="visible" class="unidad">👁</span>
                 </div>
                 
-                <a href="#" id="btn-entrar" class="btn" type="submit">Iniciar sesión</a>
+                <a href="#" id="submit" class="btn" type="submit">Iniciar sesión</a>
 
             </form>
  
@@ -64,6 +64,6 @@
             <a href="#">Política de Privacidad</a>
         </div>
     </footer>
-    <script src="login.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>

@@ -138,6 +138,7 @@ main {
     top: 50%;
     transform: translateY(-50%);
     color: gray;
+    cursor: pointer;
 }
  
 .btn {

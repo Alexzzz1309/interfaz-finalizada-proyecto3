@@ -47,11 +47,11 @@
  
                 <label for="superficie">Superficie del muro (m²)</label>
                 <div class="input-unidad">
-                    <input class="inputs" type="number " id="superficie" value="60 cm" step="0.01">
+                    <input class="inputs" type="number" id="superficie" value="60" step="0.01">
                     <span class="unidad">m²</span>
                 </div>
  
-                <button class="btn">🧮 Calcular</button>
+                <button id="calcular" class="btn">🧮 Calcular</button>
             </section>
  
             <section class="panel-resultado">
@@ -60,11 +60,11 @@
                         <span class="etiqueta-resultado">CÁLCULO REALIZADO</span>
                         <h3>Área Total de Paredes</h3>
                     </div>
-                    <span class="valor-resultado">60.00 m²</span>
+                    <span id="calculo" class="valor-resultado">0.00 m²</span>
                 </div>
  
                 <div class="materiales">
-                    <h3>Pintura e Insumos Requeridos (Considerando 2 Manos)</h3>
+                    <h3>Pintura e Insumos Requeridos</h3>
  
                     <div class="tabla-materiales">
                         <div class="fila-header">
@@ -74,30 +74,19 @@
                         </div>
                         <div class="fila">
                             <span class="material">Superficie de Pared / Muro</span>
-                            <span class="cantidad">60.00</span>
+                            <span id="pared" class="cantidad">0.00</span>
                             <span class="unidad-material">m²</span>
                         </div>
                         <div class="fila">
                             <span class="material">Pintura Látex (Rinde 6m² por Litro)</span>
-                            <span class="cantidad">10.00</span>
+                            <span id="pintura" class="cantidad">0.00</span>
                             <span class="unidad-material">Litros</span>
-                        </div>
-                        <div class="fila">
-                            <span class="material">Baldes de Pintura Recomendados</span>
-                            <span class="cantidad">3.00</span>
-                            <span class="unidad-material">baldes (de 4 Litros)</span>
-                        </div>
-                        <div class="fila">
-                            <span class="material">Fijador / Sellador Concentrado</span>
-                            <span class="cantidad">1.00</span>
-                            <span class="unidad-material">litro</span>
                         </div>
                     </div>
                 </div>
  
                 <div class="botones-resultado">
                     <button  id="btn-regreso"class="btn-secundario">Volver al menú</button>
-                    <button class="btn-oscuro">↻ Nuevo cálculo</button>
                 </div>
             </section>
         </div>
@@ -110,6 +99,6 @@
             <a href="#">Política de Privacidad</a>
         </div>
     </footer>
-    <script src="pintura.js"></script>
+    <script src="js/pintura.js"></script>
 </body>
 </html>

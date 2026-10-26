@@ -46,9 +46,8 @@
 
                 <label for="espesor">Espesor del muro</label>
                 <select class="inputs" id="espesor">
-                    <option>30 cm</option>
-                    <option>20 cm</option>
-                    <option>15 cm</option>
+                    <option value="30">30 cm</option>
+                    <option value="20">20 cm</option>
                 </select>
 
                 <label for="largo">Largo (m)</label>
@@ -63,7 +62,7 @@
                     <span class="unidad">m</span>
                 </div>
 
-                <button class="btn">🧮 Calcular</button>
+                <button id="calcular" class="btn">🧮 Calcular</button>
             </section>
 
             <section class="panel-resultado">
@@ -71,7 +70,7 @@
                     <span class="etiqueta-resultado">CÁLCULO REALIZADO</span>
                     <div class="resultado-top">
                         <h3>Superficie Total del Muro</h3>
-                        <span class="valor-resultado">15.00 m²</span>
+                        <span id="calculo" class="valor-resultado">0.00 m²</span>
                     </div>
                 </div>
 
@@ -86,30 +85,24 @@
                         </div>
 
                         <div class="fila">
-                            <span>Ladrillos Comunes (24x11.5x5.3)</span>
-                            <span class="cantidad">750</span>
+                            <span>Ladrillos Comunes</span>
+                            <span id="ladrillo" class="cantidad">0</span>
                             <span class="unidad-material">unidades</span>
                         </div>
                         <div class="fila">
                             <span>Cemento Portland</span>
-                            <span class="cantidad">3.00</span>
-                            <span class="unidad-material">bolsas (50kg)</span>
+                            <span id="cemento" class="cantidad">0.00</span>
+                            <span class="unidad-material">kg</span>
                         </div>
                         <div class="fila">
                             <span>Arena Fina</span>
-                            <span class="cantidad">0.45</span>
+                            <span id="arena" class="cantidad">0.00</span>
                             <span class="unidad-material">m³</span>
-                        </div>
-                        <div class="fila">
-                            <span>Cal Hidratada</span>
-                            <span class="cantidad">1.50</span>
-                            <span class="unidad-material">bolsas (25kg)</span>
                         </div>
                     </div>
 
                     <div class="botones-resultado">
                         <button id="btn-menu" class="btn-secundario">Volver al menú</button>
-                        <button class="btn-oscuro">↻ Nuevo cálculo</button>
                     </div>
                 </div>
             </section>
@@ -123,6 +116,6 @@
             <a href="#">Política de Privacidad</a>
         </div>
     </footer>
-    <script src="muro.js"></script>
+    <script src="js/muro.js"></script>
 </body>
 </html>
