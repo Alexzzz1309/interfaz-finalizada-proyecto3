@@ -15,11 +15,19 @@ $submit.addEventListener("click", (e) =>{
   e.preventDefault();
 
 if($username.value !== "" && $password.value !== "" && $password2.value !== ""){
-  if($password !== $password2){
+  if($password.value !== $password2.value){
     alert("las contraseñas no coinciden");
     return;
   }
- window.location.href = "login.html"
+
+fetch("/registro", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ username: $username.value, password: $password.value })
+}).then(() => {
+  window.location.href = "login.html";
+});
+
 } else {
   alert("Completa los campos requeridos")
 }

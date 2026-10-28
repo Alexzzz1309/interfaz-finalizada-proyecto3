@@ -30,14 +30,28 @@ $submit.addEventListener("click", (e) => {
         e.preventDefault();
 
     if ($password.value !== "" && $username.value !== ""){
-      window.location.href = "menu.html";
-    } else{
-      alert("Completa los campos requeridos");
-     
+      
+      fetch("/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username: $username.value, password: $password.value })
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.ok) {
+          window.location.href = "menu.html";
+        } else {
+          alert("Usuario o contraseña incorrectos");
+        }
+      });
+
+  } else {
+    alert("Completa los campos requeridos");
   }
-
-
 });
+
+
+
 
 
 //** del documento que consiga el id del html ("btn-registro") 
